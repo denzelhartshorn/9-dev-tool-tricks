@@ -51,8 +51,29 @@
       console.clear();
 
       // Grouping together
-      console;
+      dogs.forEach(dog => {
+        console.groupCollapsed(`${dog.name}`);
+        console.log(`This is ${dog.name}`);
+        console.log(`${dog.name} is ${dog.age} years old`);
+        console.log(`${dog.name} is ${dog.age * 7} dog years old`);
+        console.groupEnd(`${dog.name}`);
+      });
       // counting
+
+      console.count("phil");
+      console.count("carl");
+      console.count("phil");
+      console.count("phil");
+      console.count("steve");
+      console.count("carl");
+      console.count("carl");
+      console.count("steve");
+      console.count("phil");
+      console.count("phil");
+      console.count("steve");
+      console.count("steve");
+      console.count("steve");
+      console.count("carl");
 
       // timing
     </script>
